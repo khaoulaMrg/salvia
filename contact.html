@@ -1,0 +1,159 @@
+<html>
+    <style>
+      .header{
+      position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 13%;
+        padding: 20px 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+     
+       background-color: white;
+       border-bottom: 1px solid silver;
+       z-index: 1;
+      
+      }
+    
+  
+       
+    h2{
+        color:black;
+        font-size: 80px;
+        text-align: left;
+        padding: 0 0 30px 0;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+       
+
+        }
+        .navigation a{
+            position: relative;
+            font-size: 40px;
+            color:black;
+            margin-top: 10px;
+            text-align: center;
+            margin-left: 70px;
+           
+        }
+        .navigation a::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -6px;
+            width:100%;
+            height:3px;
+            background: #8b4040;
+            border-radius: 5px;
+            transform: scaleX(0);
+            transition: transform .5s;
+            transform-origin: right;
+        }
+       
+        .navigation a:hover::after{
+        transform-origin: left;
+        transform: scaleX(1);
+
+       }
+       body{
+        display: flex;
+      
+       }
+      
+      .header a{
+        background:#85c1ee;
+        padding: 10px 24px;
+        font-size: 18px;
+        border-radius: 20px;
+      }
+
+      .header a :hover{
+        background: #034e88;
+
+      }
+      h1{
+        text-align: center;
+        font-size: 40px;
+        color: rgb(84, 84, 185);
+      }
+     .container{
+    margin: -5px 0 20px 5px;
+    color: #a6a6a6;
+    cursor: pointer;
+    text-align: center;
+    text-indent: 10px;
+    letter-spacing: 2px;
+    line-height: 2;
+   
+    }
+    .container:hover{
+    text-decoration: underline;
+    text-align: center;
+    
+   
+     }
+     #rcorners1 {
+        border-radius: 25px;
+        border-style: groove;
+        
+        padding: 20px; 
+        width: 700px;
+        height: 500px;  
+        transform-origin: right;
+        margin-top: 600px;
+      
+        margin-right: 10000px; 
+       
+        }
+        h1{
+          margin-top: 300px; 
+          margin-left: 600px;  
+          }
+        
+         
+        
+     
+     </style>
+     <body>
+    
+    <header>
+      <table>
+        <tr>
+          
+        <h2 class="logo">SALVIA</h2>
+        <nav class="navigation">
+            <a href="SalProjet.html">Acceuil</a>
+            <a href="products.html">Produits</a>
+            <a href="contact.html">Contactez-nous</a>
+           
+        </nav>
+          
+        </tr>
+      </table>
+    </header>
+   
+    <h1>Contact and basic informations:</h1>
+   
+       
+    <div class="container"; id="rcorners1">
+        <ion-icon name="home-outline" style="font-size: 30px;"></ion-icon> <a style="color: black; font-size: 40px;" >7QP7+QP4 Av. de Bordeaux, SAFI</a><br>
+       
+        <ion-icon name="call-outline"  style="font-size: 30px;"></ion-icon> <a style="color: black; font-size: 40px;"> +212614116655</a> <br>
+       
+        <ion-icon name="mail-outline"  style="font-size: 30px;"></ion-icon>  <a style="color: black; font-size: 40px;">  fces.maroc@gmail.com </a> <br>
+
+        <ion-icon name="logo-facebook"  style="font-size: 30px;"></ion-icon> <ion-icon name="logo-instagram"  style="font-size: 30px;"></ion-icon>  <a style="color: black; font-size: 30px;">  FCES MAROC </a> <br>
+
+    </div>
+     
+    
+   
+    
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    
+
+    </form>
+     </body>
+   

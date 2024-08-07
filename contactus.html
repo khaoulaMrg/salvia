@@ -1,0 +1,359 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SALVIA.ma</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+</head>
+ <style>.header{
+  position: fixed;
+  
+    width: 100%;
+    height: 15%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ 
+   background-color: white;
+   border-bottom: 1px solid silver;
+   z-index: 1;
+  
+  }
+
+
+   
+h2{
+    color:black;
+    font-size: 80px;
+    text-align: left;
+    padding: 0 0 30px 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   
+       }
+   
+        .navigation a{
+            position: relative;
+            font-size: 40px;
+            color:black;
+            margin-top: 10px;
+            text-align: center;
+            margin-left: 70px;
+           
+        }
+    
+       
+        .navigation a:hover::after{
+        transform-origin: left;
+        transform: scaleX(1);
+
+       }
+       body{
+     display: flex;
+        background-attachment: fixed;  
+        background-size: cover; 
+        animation: fadebody 3s ease-in-out;
+       }
+      
+      .header a{
+        background:#85c1ee;
+        padding: 10px 24px;
+        font-size: 18px;
+        border-radius: 20px;
+      }
+      @keyframes fadebody{
+        0%{
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        100%{
+          opacity: 1;
+          transform: translateY(0);
+        }
+       }
+
+        *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@keyframes fadeBody {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+body{
+    background: #edf0f5; 
+    animation: fadeBody 2s ease-in-out;
+   
+}
+body, input,textarea, a{
+    font-family: 'Roboto', sans-serif;
+}
+#section-wrapper{
+    width: 100%;
+    padding: 10px;
+    margin-top: 15%;
+    margin-left: -55px;
+}
+.box-wrapper{
+    position: relative;
+    display: table;
+    width:1100px;
+    margin:auto;
+    margin-top:35px;
+    border-radius: 30px;
+}
+.info-wrap{
+    width:35%;
+    height: 551px;
+    padding: 40px;
+    float: left;
+    display: block;
+    border-radius: 30px 0px 0px 30px;
+    background: linear-gradient(144deg, rgba(126,39,156,1) 0%, rgb(137, 224, 220) 49%);
+    color: #fff;
+}
+.info-title{
+    text-align: left;
+    font-size: 28px;
+    letter-spacing: 0.5px;
+}
+.info-sub-title{
+    font-size: 18px;
+    font-weight: 300;
+    margin-top: 17px;
+    letter-spacing: 0.5px;
+    line-height: 26px;
+}
+.info-details {
+    list-style: none;
+    margin: 60px 0px;
+}
+.info-details li {
+    margin-top: 25px;
+    font-size: 18px;
+    color: #fff;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.info-details li a {
+    color: #fff;
+    text-decoration: none;
+    
+}
+.info-details li a:hover {
+    color: #f889e0;
+    
+}
+
+
+.form-wrap{
+    width:65%;
+    float: right;
+    padding:40px 25px 35px 25px;
+    border-radius: 0px 30px 30px 0px;
+    background: #ecf0f3;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.form-title{
+    text-align: left;
+    margin-left: 23px;
+    font-size: 28px;
+    letter-spacing: 0.5px;
+    font-size: 33px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(6, 102, 102);;
+}
+.form-fields{
+    display: table;
+    width: 100%;
+    padding: 15px 5px 5px 5px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.form-fields input,
+.form-fields textarea{
+    border: none;
+    outline:none;
+    background: none;
+    font-size: 18px;
+    color:#555;
+    padding: 20px 10px 20px 5px;
+    width:100%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.form-fields textarea{
+    height: 150px;
+    resize: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.form-group{
+    width: 46%;
+    float: left;
+    padding: 0px 30px;
+    margin: 14px 12px;
+    border-radius: 25px;
+    box-shadow: inset 8px 8px 8px #cbced1, inset -8px -8px 8px #ffffff;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.form-fields .form-group:last-child {
+    width: 96%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.submit-button{
+    width: 96%;
+    height: 60px;
+    margin: 0px 12px;
+    border-radius: 30px;
+    font-size: 20px;;
+    font-weight: 700;
+    outline: none;
+    border:none;
+    cursor: pointer;
+    color:#fff;
+    text-align: center;
+    background: #F44770;
+    box-shadow: 3px 3px 8px #b1b1b1, -3px -3px 8px #ffffff;
+    transition: .5s;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.submit-button:hover{
+    background: #08ebc5;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+/* Responsive css */
+
+@media only screen and (max-width: 767px) {
+    .box-wrapper{
+        width: 100%;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    .info-wrap,
+    .form-wrap{
+        width: 100%;
+        height: inherit;
+        float: none; 
+        font-family: Georgia, 'Times New Roman', Times, serif;
+         
+    }
+    .info-wrap{
+        border-radius: 30px 30px 0px 0px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    .form-wrap{
+        border-radius: 0px 0px 30px 30px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    .form-group{
+        width: 100%;
+        float: none;
+        margin: 25px 0px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    .form-fields .form-group:last-child, 
+    .submit-button{
+        width: 100%;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    .submit-button{
+        margin: 10px 0px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    
+   
+}
+.container .contactInfo .box .icon{
+    min-width: 60px;
+    height: 60px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+}
+
+span{
+  color: black;
+}
+      </style>
+       
+
+       <body>
+           <div class="header">
+           <h2 class="logo">SALVIA</h2>
+           <nav class="navigation">
+             <a href="SalProjet.html">Home</a>
+             <a href="about.html">About</a>
+             <a href="services.html">Services</a>
+             <a href="contactus.html">Contact us</a>
+              
+           </nav>
+         </div>
+
+
+
+        
+    <section id="section-wrapper">
+        <div class="box-wrapper">
+            <div class="info-wrap">
+               
+                <ul class="info-details">
+                    <li>
+                        <i class="fas fa-phone-alt"></i>
+                        <span>Phone:</span> <a href="tel:+212523232323">+212 523 232 323</a>
+                        
+                    </li>
+                    <li>
+                        <i class="fas fa-paper-plane"></i>
+                        <span>Email:</span> <a href="mailto:info@yoursite.com">salvia-rose@gmail.com</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-globe"></i>
+                        <span>Website:</span> <a href="https://salvia.ma/fr">salvia-rose.ma</a>
+                    </li>
+                    <li>
+                        <div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i><span>localisation:</span> <a href="locaaal.html">Appt Rue Bourdeaux N 8 2 Eme Etage Quartier Hopital - Safi</a></div>
+                        
+
+                    </li>
+                </ul>
+                
+            </div>
+            <div class="form-wrap">
+                <form action="#" method="POST">
+                    <h2 class="form-title">Send us a message</h2>
+                    <div class="form-fields">
+                        <div class="form-group">
+                            <input type="text" class="fname" placeholder="First Name">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="lname" placeholder="Last Name">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="email" placeholder="E-Mail">
+                        </div>
+                        <div class="form-group">
+                            <input type="number" class="phone" placeholder="Phone">
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" id="" placeholder="Write your message"></textarea>
+                        </div>
+                    </div>
+                    <input type="submit" value="Send Message" class="submit-button">
+                </form>
+            </div>
+        </div>
+    </section>
+    
+       </body>
+</html>  

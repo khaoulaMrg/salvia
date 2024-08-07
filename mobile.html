@@ -1,0 +1,184 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SALVIA.ma</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+</head>
+ <style>
+         .header{
+      position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 13%;
+        padding: 20px 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+     
+       background-color: white;
+       border-bottom: 1px solid silver;
+       z-index: 1;
+      
+      }
+    
+  
+       
+    h2{
+        color:black;
+        font-size: 80px;
+        text-align: left;
+        padding: 0 0 30px 0;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+   
+        .navigation a{
+            position: relative;
+            font-size: 40px;
+            color:black;
+            margin-top: 10px;
+            text-align: center;
+            margin-left: 70px;
+           
+        }
+     
+       
+        .navigation a:hover::after{
+        transform-origin: left;
+        transform: scaleX(1);
+
+       }
+       body{
+     display: flex;
+        background-attachment: fixed;  
+        background-size: cover; 
+        animation: fadebody 3s ease-in-out;
+       }
+      
+      .header a{
+        background:#85c1ee;
+        padding: 10px 24px;
+        font-size: 18px;
+        border-radius: 20px;
+      }
+      form{
+      
+      height: 100%;
+      width: 100%;
+      margin-top: 10%;
+      
+     }
+      h1{
+        font-size: 60px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: silver;
+        margin-top: 10%;
+        margin-left: 6%;
+        margin-right: 80%;
+        
+
+      }
+   
+      @keyframes fadebody{
+        0%{
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        100%{
+          opacity: 1;
+          transform: translateY(0);
+        }
+       }
+       h1{
+        font-size: 60px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: silver;
+        margin-top:5%;
+        margin-left: 6%;
+        
+       }
+       h3{
+        font-size: 50px;
+        font-family: serif;
+        color: black;
+        margin-top: 1%;
+        margin-left: 40% ;
+       }
+       p{
+        position: absolute;
+        font-size: 30px;
+        margin-top: 3%;
+        margin-right: 100px;
+        margin-left: 400px;
+        letter-spacing: 1px;
+        line-height: 1.5;
+       }
+       ul{
+        position: absolute;
+        font-size: 30px;
+        margin-top: 40%;
+        margin-right: 100px;
+        margin-left: 430px;
+        letter-spacing: 1px;
+        line-height: 1.5;
+       }
+
+
+.check-list li {
+  position: relative;
+  list-style-type: none;
+  padding-left: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.check-list li:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 5px;
+    height: 11px;
+    border-width: 0 2px 2px 0;
+    border-style: solid;
+    border-color: #00a8a8;
+    transform-origin: bottom left;
+    transform: rotate(45deg);
+}
+
+    </style>
+       
+
+       <body>
+           <div class="header">
+           <h2 class="logo">SALVIA</h2>
+           <nav class="navigation">
+             <a href="SalProjet.html">Home</a>
+             <a href="about.html">About</a>
+             <a href="services.html">Services</a>
+             <a href="contactus.html">Log in</a>
+              
+           </nav> 
+         </div>
+         
+         <form>
+       
+           <h1>Our provided services</h1>
+           <h3>Mobile development</h3>
+           <p>The exponential increase in mobile users globally has made consumption of data quite extensive. It has also opened an opportunity for entrepreneurs to think and implement innovative business ideas for app development. SALVIA comprises a team of mobile app developers who carry years of experience in creating high performing, feature-packed native as well as cross-platform mobile applications. We use a robust development process to create powerful apps to serve millions of users every day for both iOS and Android devices. Being an app development company, our key focus areas include maximizing performance, using attractive and seamless UI/UX designs, mitigating potential security risks by adhering to the best practices. We utilize various APIs and data connectors for creating the optimum mobile experience. Our team ensures that we deliver a robust, reliable, and seamlessly functioning mobile app that meets your business goals.
+
+           <br> We are here to transform your business goals irrespective of the industry, OS, or complexity of the solution. With our talented team of mobile app developers and designers the delivery of a scalable, compelling, and secure app is assured. we offer :</p>
+           <ul class="check-list">
+            <li>Design & Prototyping of Apps</li>
+              <li>Native App development</li>
+              <li>Cross-Platform App development</li>
+          </ul>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> 
+               
+          
+               
+          </form>
+        </body>
+        </html>
